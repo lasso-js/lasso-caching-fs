@@ -118,7 +118,7 @@ exports.isDirectorySync = function(filePath) {
     return statSync(filePath).isDirectory();
 };
 
-exports.clearCache = function() {
+exports.clearCaches = function() {
     cache = {};
     packageCache = {};
 };
