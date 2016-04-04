@@ -3,12 +3,12 @@
   "description": "Caching checks on the file system to avoid I/O overhead",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lasso-js/lasso-caching-fs.git"
+    "url": "git+https://github.com/lasso-js/lasso-caching-fs.git"
   },
   "scripts": {
     "test": "npm run mocha && npm run jshint",
-    "mocha": "node_modules/.bin/mocha --ui bdd --reporter spec test/",
-    "jshint": "node_modules/.bin/jshint src/"
+    "mocha": "mocha --ui bdd --reporter spec test/",
+    "jshint": "jshint src/"
   },
   "author": "Patrick Steele-Idem <pnidem@gmail.com>",
   "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
@@ -26,5 +26,12 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/lasso-js/lasso-caching-fs/issues"
+  },
+  "homepage": "https://github.com/lasso-js/lasso-caching-fs#readme",
+  "directories": {
+    "test": "test"
+  }
 }
