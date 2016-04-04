@@ -31,7 +31,7 @@ describe('lasso-caching-fs' , function() {
         stats = lassoCachingFS.statSync(targetFile);
         expect(stats.exists()).to.equal(false);
 
-        lassoCachingFS.clearCache();
+        lassoCachingFS.clearCaches();
 
         stats = lassoCachingFS.statSync(targetFile);
         expect(stats.exists()).to.equal(true);
